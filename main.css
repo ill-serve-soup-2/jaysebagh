@@ -131,3 +131,26 @@ p {
     padding-right: 10%;
     text-align: justify;
 }
+
+
+.nav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav a {
+   float: center;
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   margin-left: 10px;
+   text-decoration: none;
+}
+
+.nav a:hover {
+    color: lightcoral;
+}
