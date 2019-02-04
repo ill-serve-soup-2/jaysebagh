@@ -3,6 +3,10 @@
    License: none (public domain)
 */
 
+*{
+    box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,10 +58,12 @@ table {
 }
 
 html {
-    background-image: url("/images/bg.jpg");
+    background-image: url("/images/chef-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 
 h1 {
     font-size: 3em;
@@ -66,6 +72,9 @@ h1 {
     letter-spacing: 0.075em;
     text-transform: uppercase;
     font-family: "awesome-font", Verdana, Tahoma;
+    background-color: lightcoral;
+    margin: 0 30%;
+    padding: 1% 0;
 }
 
 h2 {
@@ -79,13 +88,14 @@ h2 {
 
 h3 {
     font-size: 1em;
-    color: white;
+    color: lightcoral;
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     font-family: "awesome-font", Verdana, Tahoma;
-    padding-top: 40px;
-    padding-bottom: 5%;
+    margin: 5% 30%;
+    padding: 1% 0;
+    background-color: white;
 }
 
 h4 {
@@ -140,11 +150,17 @@ p {
 
 
 .nav {
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #333;
     position: fixed;
     top: 0;
     width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    color: white;
+    align-items: center;
 }
 
 .nav a {
@@ -159,4 +175,21 @@ p {
 
 .nav a:hover {
     color: lightcoral;
+}
+
+.actions {
+    display: flex;
+}
+
+.scroll {
+    padding-bottom: 20px;
+}
+
+.scroll {
+    display:flex;
+    justify-content: center;
+}
+
+#top {
+    border: 1px solid red;
 }
