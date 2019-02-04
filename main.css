@@ -46,3 +46,48 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* main css */
+@font-face {
+    font-family: "awesome-font";
+    src: url(fontawesome-webfont.ttf) format("truetype");
+}
+
+html {
+    background-image: url("/images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 3em;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    font-family: "awesome-font", Verdana, Tahoma;
+}
+
+h2 {
+    font-size: 3em;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: "awesome-font", Verdana, Tahoma;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1em;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: "awesome-font", Verdana, Tahoma;
+    padding-top: 40px;
+}
+
+.name {
+    text-align: center;
+    margin-top: 15%;
+}
