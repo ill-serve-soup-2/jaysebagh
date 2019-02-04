@@ -58,7 +58,7 @@ table {
 }
 
 html {
-    background-image: url("/images/chef-bg.jpg");
+    background: url("/images/chef-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -192,4 +192,117 @@ p {
 
 #top {
     border: 1px solid red;
+}
+ 
+@media(max-width:1426px) {
+    h1 {
+        margin: 0 25%;
+        padding: 1% 0;
+    }
+}
+
+@media(max-width:1148px) {
+    h1 {
+        margin: 0 20%;
+        padding: 1% 0;
+    }
+}
+
+@media(max-width:962px) {
+    h1 {
+        margin: 0 15%;
+        padding: 1% 0;
+    }
+}
+
+@media(max-width:829px) {
+    h1 {
+        font-size: 2em;
+        margin: 0 20%;
+        padding: 1% 0;
+    }
+    h3 {
+        margin: 5% 10%;
+        padding: 1% 1%;
+        background-color: white;
+    }
+    .content {
+        background-color: white;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media(max-width:652px) {
+    h1 {
+        font-size: 2em;
+        margin: 0 15%;
+        padding: 1% 0;
+    }
+    h3 {
+        margin: 5% 10%;
+        padding: 1% 1%;
+        background-color: white;
+    }
+    .content {
+        background-color: white;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+/* responsive */
+/* 500 for mobile */
+@media (max-width:563px) {
+    h1 {
+        font-size: 2em;
+        margin: 30% 8%;
+        padding: 5% 1%;
+    }
+    h3 {
+        margin: 5% 10%;
+        padding: 1% 1%;
+        background-color: white;
+    }
+    .content {
+        background-color: white;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width:500px) {
+    h1 {
+        font-size: 2em;
+        margin: 30% 8%;
+        padding: 5% 1%;
+    }
+    h3 {
+        margin: 5% 10%;
+        padding: 1% 1%;
+        background-color: white;
+    }
+    .content {
+        background-color: white;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width:486px) {
+    h1 {
+        font-size: 30px;
+        margin: 30% 8%;
+        padding: 5% 1%;
+    }
+    h3 {
+        margin: 5% 10%;
+        padding: 1% 1%;
+        background-color: white;
+    }
+    .content {
+        background-color: white;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
