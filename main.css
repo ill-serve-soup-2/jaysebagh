@@ -67,6 +67,7 @@ html {
     -o-background-size: cover;
 }
 
+/* CUSTOM BACKGROUND CHANGE ON SCROLL */
 html {
     background-image: url("/images/chef-bg.jpg");
 }
@@ -82,6 +83,7 @@ html.three {
 html.four {
     background-image: url("/images/bgfour.jpg");
 }
+/* END CUSTOM BACKGROUND CHANGE ON SCROLL */
 
 #titlesoup {
     font-size: 3em;
@@ -220,7 +222,7 @@ h6 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-
+/* MEDIA QUERIES FOR RESPONSIVE LAYOUT */
  
 @media(max-width:1426px) {
     #titlesoup {
@@ -279,8 +281,6 @@ h6 {
     }
 }
 
-/* responsive */
-/* 500 for mobile */
 @media (max-width:563px) {
     #titlesoup {
         font-size: 2em;
@@ -329,6 +329,7 @@ h6 {
     }
 }
 
+/* MOBILE */
 @media (max-width:500px) {
     #titlesoup {
         font-size: 2em;
@@ -372,3 +373,4 @@ h6 {
         font-size: 15px;
     }
 }
+/* END MEDIA QUERIES FOR RESPONSIVE LAYOUT */
