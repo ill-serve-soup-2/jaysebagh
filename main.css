@@ -286,7 +286,6 @@ h6 {
 @media(max-width: 897px) {
     .nav {
         flex-direction: column;
-        display: flex;
         height: auto;
     }
     .pages {
@@ -305,22 +304,16 @@ h6 {
         border-top: 1px solid gray;
         display: flex;
         align-items: center;
-        border: 1px solid yellow;
     }
 
     .actions a {
         margin: 0 40px;
-        /* border: 1px solid blue; */
-    }
-
-    .btn {
-        border: 1px solid red;
-        margin-left: 50px;
     }
 
     .loginbtn {
         width: 120px;
         height: 40px;
+        padding-left: 20px;
     }
 
     .logo {
