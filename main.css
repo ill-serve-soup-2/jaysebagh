@@ -187,14 +187,30 @@ h6 {
    padding: 14px 16px;
    margin-left: 10px;
    text-decoration: none;
+   
 }
 
 .nav a:hover {
     color: lightcoral;
 }
 
+.placeholder {
+    height: 168px;
+}
+
 .actions {
     display: flex;
+    
+}
+
+.pages {
+    display: flex;
+    margin-left: 110px;
+}
+
+.pages a {
+    font-family: "awesome-font", Verdana, Tahoma;
+    border: 1px solid white;
 }
 
 .scroll {
@@ -204,10 +220,6 @@ h6 {
 .scroll {
     display:flex;
     justify-content: center;
-}
-
-#top {
-    border: 1px solid red;
 }
 
 .logosoup {
@@ -250,10 +262,73 @@ h6 {
     }
 }
 
+@media(max-width: 927px) {
+    .logo {
+        white-space: nowrap;
+    }
+
+    .aboutus {
+        white-space: nowrap;
+    }
+
+    .themeselect {
+        white-space: nowrap;
+    }
+}
+
 @media(max-width:962px) {
     #titlesoup {
         margin: 0 15%;
         padding: 1% 0;
+    }
+}
+
+@media(max-width: 897px) {
+    .nav {
+        flex-direction: column;
+        display: flex;
+        height: auto;
+    }
+    .pages {
+        margin-left: 0px;
+    }
+    
+    .pages a {
+        font-family: "awesome-font", Verdana, Tahoma;
+        border: none;
+        margin-top: 15px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .actions {
+        border-top: 1px solid gray;
+        display: flex;
+        align-items: center;
+        border: 1px solid yellow;
+    }
+
+    .actions a {
+        margin: 0 40px;
+        /* border: 1px solid blue; */
+    }
+
+    .btn {
+        border: 1px solid red;
+        margin-left: 50px;
+    }
+
+    .loginbtn {
+        width: 120px;
+        height: 40px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .themeselect {
+        border: none;
     }
 }
 
@@ -275,7 +350,8 @@ h6 {
     }
 }
 
-@media(max-width: 661px) {
+@media(max-width: 668px) {
+
     .themeselect {
         border: none;
         height: 50px;
@@ -286,6 +362,11 @@ h6 {
     .loginbtn {
         width: 120px;
         height: 40px;
+    }
+
+    .actions {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -326,30 +407,15 @@ h6 {
     }
 }
 
-@media (max-width:529px) {
-    .loginbtn {
-        width: 100px;
-        height: 40px;
-    }
-}
-
-@media (max-width:486px) {
-    #titlesoup {
-        font-size: 30px;
-        margin: 30% 8%;
-        padding: 5% 1%;
-    }
-}
-
-@media (max-width: 473px) {
-    .logosoup {
-        width: 20px;
-        height: 20px;
-        margin-right: 10px;
-    }
-
+@media (max-width: 486px) {
     .nav a {
         padding: 14px 8px;
+        white-space: nowrap;
+    }
+
+    #titlesoup {
+        white-space: nowrap;
+        font-size: 30px;
     }
 }
 /* END MEDIA QUERIES FOR RESPONSIVE LAYOUT */
