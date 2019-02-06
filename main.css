@@ -133,6 +133,9 @@ h6 {
     background-color: #e8cfcf;
     margin-left: 20%;
     margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header4 {
@@ -246,6 +249,39 @@ h6 {
     border-radius: 10px;
 }
 
+#t1, #t2, #t3, #tabout, #tv {
+    font-size: 40px;
+}
+
+#p1, #p2, #p3, #pabout, #pv {
+    font-size: 30px;
+}
+
+#p2, #pv {
+    text-align: center;
+}
+
+.phimg1 {
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+.phimg2 {
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+.phimg3 {
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+.phimg4 {
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+
 /* MEDIA QUERIES FOR RESPONSIVE LAYOUT */
  
 @media(max-width:1426px) {
@@ -262,6 +298,12 @@ h6 {
     }
 }
 
+@media(max-width: 987px) {
+    #pabout {
+        font-size: 20px;
+    }
+}
+
 @media(max-width: 927px) {
     .logo {
         white-space: nowrap;
@@ -274,6 +316,15 @@ h6 {
     .themeselect {
         white-space: nowrap;
     }
+
+    #t1, #t2, #t3, #tabout, #tv {
+        font-size: 30px;
+    }
+    
+    #p1, #p2, #p3, #pabout, #pv {
+        font-size: 20px;
+    }
+    
 }
 
 @media(max-width:962px) {
@@ -400,6 +451,15 @@ h6 {
     }
 }
 
+@media (max-width: 510px) {
+    #pabout {
+        font-size: 15px;
+    }
+    #tv {
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 486px) {
     .nav a {
         padding: 14px 8px;
@@ -409,6 +469,12 @@ h6 {
     #titlesoup {
         white-space: nowrap;
         font-size: 30px;
+    }
+}
+
+@media (max-width: 441px) {
+    #titlesoup {
+        font-size: 20px;
     }
 }
 /* END MEDIA QUERIES FOR RESPONSIVE LAYOUT */
