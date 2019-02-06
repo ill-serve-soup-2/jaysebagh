@@ -174,7 +174,7 @@ h6 {
     height: 80px;
     display: flex;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 10px;
     color: white;
     align-items: center;
 }
@@ -222,6 +222,18 @@ h6 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
+.loginbtn {
+    width: 150px;
+    height: 50px;
+}
+
+.themeselect {
+    border: 1px solid white;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
 /* MEDIA QUERIES FOR RESPONSIVE LAYOUT */
  
 @media(max-width:1426px) {
@@ -263,21 +275,25 @@ h6 {
     }
 }
 
+@media(max-width: 661px) {
+    .themeselect {
+        border: none;
+        height: 50px;
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+
+    .loginbtn {
+        width: 120px;
+        height: 40px;
+    }
+}
+
 @media(max-width:652px) {
     #titlesoup {
         font-size: 2em;
         margin: 0 15%;
         padding: 1% 0;
-    }
-    h3 {
-        margin: 5% 10%;
-        padding: 1% 1%;
-        background-color: white;
-    }
-    .content {
-        background-color: #e8cfcf;
-        margin-left: 10%;
-        margin-right: 10%;
     }
 }
 
@@ -287,16 +303,6 @@ h6 {
         margin: 30% 8%;
         padding: 5% 1%;
     }
-    h3 {
-        margin: 5% 10%;
-        padding: 1% 1%;
-        background-color: white;
-    }
-    .content {
-        background-color: #e8cfcf;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
 }
 
 @media (max-width:547px) {
@@ -304,20 +310,6 @@ h6 {
         font-size: 2em;
         margin: 30% 8%;
         padding: 5% 1%;
-    }
-    h3 {
-        margin: 5% 10%;
-        padding: 1% 1%;
-        background-color: white;
-    }
-    .content {
-        background-color: #e8cfcf;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    
-    .logosoup {
-        display: none;
     }
 
     .logo {
@@ -327,28 +319,17 @@ h6 {
     .ptag {
         font-size: 15px;
     }
+    .logosoup {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
 }
 
-/* MOBILE */
-@media (max-width:500px) {
-    #titlesoup {
-        font-size: 2em;
-        margin: 30% 8%;
-        padding: 5% 1%;
-    }
-    h3 {
-        margin: 5% 10%;
-        padding: 1% 1%;
-        background-color: white;
-    }
-    .content {
-        background-color: #e8cfcf;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    
-    .ptag {
-        font-size: 15px;
+@media (max-width:529px) {
+    .loginbtn {
+        width: 100px;
+        height: 40px;
     }
 }
 
@@ -358,19 +339,17 @@ h6 {
         margin: 30% 8%;
         padding: 5% 1%;
     }
-    h3 {
-        margin: 5% 10%;
-        padding: 1% 1%;
-        background-color: white;
+}
+
+@media (max-width: 473px) {
+    .logosoup {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
     }
-    .content {
-        background-color: #e8cfcf;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    
-    .ptag {
-        font-size: 15px;
+
+    .nav a {
+        padding: 14px 8px;
     }
 }
 /* END MEDIA QUERIES FOR RESPONSIVE LAYOUT */
