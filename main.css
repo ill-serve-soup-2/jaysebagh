@@ -84,22 +84,6 @@ html.four {
     background-image: url("/images/bgfour.jpg");
 }
 
-#one {
-    border: 1px solid red;
-}
-
-#two {
-    border: 1px solid blue;
-}
-
-#three {
-    border: 1px solid yellow;
-}
-
-#top {
-    border: 1px solid green;
-}
-
 
 /* END CUSTOM BACKGROUND CHANGE ON SCROLL */
 
@@ -279,25 +263,23 @@ h6 {
     text-align: center;
 }
 
-.phimg1 {
-    width: 60%;
+.image-container {
+    height: 600px;
+    width: 100%;
+    padding: 0px 20px;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.phimg2 {
-    width: 60%;
-    margin-bottom: 50px;
+.phimg1, .phimg2, .phimg3  {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
 }
 
-.phimg3 {
-    width: 60%;
-    margin-bottom: 50px;
-}
-
-.phimg4 {
-    width: 60%;
-    margin-bottom: 50px;
-}
 
 
 /* MEDIA QUERIES FOR RESPONSIVE LAYOUT */

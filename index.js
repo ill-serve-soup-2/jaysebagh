@@ -38,33 +38,43 @@ titlesoup.addEventListener("mouseleave", e => {
 });
 
 // SELECT ONE, TWO, THREE, AND HTML.
-let top = document.querySelector("#top")
 let one = document.querySelector("#one");
 let oneValue = one.offsetTop;
 let two = document.querySelector("#two")
 let twoValue = two.offsetTop;
 let three = document.querySelector("#three")
 let threeValue = three.offsetTop;
+let four = document.querySelector("#four")
+let fourValue = four.offsetTop;
+
 let html = document.querySelector("html");
+
+
 // console.log(oneValue, twoValue, threeValue)
 // LISTEN FOR MOUSE SCROLL
 window.addEventListener("scroll", e => {
     // CHECKS WINDOW POSITION TO SHOW FIRST BG
+    console.log(window.scrollY);
     if (window.scrollY < oneValue) {
+        console.log('less than oneValue')
         html.classList.remove("two", "three", "four")
     }
     // CHECKS WINDOW POSITION TO SHOW SECOND BG
     if (window.scrollY >= oneValue) {
+        console.log('greater or = than oneValue')
         html.classList.add("two")
         html.classList.remove("three", "four")
     }
     // CHECKS WINDOW POSITION TO SHOW THIRD BG
     if (window.scrollY >= twoValue) {
+        console.log('two Value', twoValue);
+        console.log('greater or = than twoValue')
         html.classList.add("three")
         html.classList.remove("two", "four")
     }
     // CHECKS WINDOW POSITION TO SHOW FOUR BG
     if (window.scrollY >= threeValue) {
+        console.log('greater or = than threeValue')
         html.classList.add("four")
         html.classList.remove("two", "three")
     }
