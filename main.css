@@ -92,6 +92,12 @@ html.four {
 
 /* END CUSTOM BACKGROUND CHANGE ON SCROLL */
 
+.mlg-snoop-dogg {
+	position: relative;
+	bottom: 0;
+    right: 0;
+}
+
 #loading {
     -webkit-animation: rotation 0.5s infinite linear;
 }
