@@ -280,6 +280,26 @@ h6 {
     max-width: 100%;
 }
 
+/* STRETCH FUN STUFF */
+/* cursor trail */
+.left {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+.right {
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+#trail {transition: transform .1s}
+
 
 
 /* MEDIA QUERIES FOR RESPONSIVE LAYOUT */

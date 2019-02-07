@@ -85,3 +85,47 @@ window.addEventListener("scroll", e => {
     //     html.classList.remove("two", "three")
     // }
 })
+
+
+// STRETCH FUN STUFF
+// cursor trail
+
+
+let trail = document.getElementById("trail");
+document.addEventListener("mousemove", getMouse); 
+
+trail.style.position = "absolute";	
+let trailpos = {x:0, y:0};
+
+setInterval(followMouse, 50);
+
+let mouse = {x:0, y:0};
+
+let dir = "right";
+function getMouse(e){
+    mouse.x = e.pageX;
+    mouse.y = e.pageY;
+
+if(mouse.x > trailpos.x){
+  dir = "right";
+} else {
+  dir = "left";
+}
+}
+
+function followMouse(){
+    let distX = mouse.x - trailpos.x;
+    let distY = mouse.y - trailpos.y;
+
+    trailpos.x += distX/5;
+    trailpos.y += distY/2;
+    
+    trail.style.left = trailpos.x + "px";
+    trail.style.top = trailpos.y + "px";
+
+    if (dir == "right"){
+        trail.setAttribute("class", "right");
+    } else {
+        trail.setAttribute("class", "left");        
+    }
+}
