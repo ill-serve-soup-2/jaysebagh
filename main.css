@@ -67,6 +67,11 @@ html {
     -o-background-size: cover;
 }
 
+body {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
 /* CUSTOM BACKGROUND CHANGE ON SCROLL */
 /* html {
     background-image: url("/images/chef-bg.jpg");
@@ -299,3 +304,75 @@ h6 {
     -ms-filter: "FlipH";
 }
 #trail {transition: transform .1s}
+
+#bubbles {
+    position: absolute;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+}
+
+
+#bubbleimg {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    cursor: url("https://pa1.narvii.com/6820/643460188d751b3e421c6ae47d858f37b4b38ecb_128.gif"), auto;
+
+}
+
+
+.rainbow {
+    font-size: 40px;
+    /* Chrome, Safari, Opera */
+   -webkit-animation: rainbow 3s infinite; 
+   
+   /* Internet Explorer */
+   -ms-animation: rainbow 3s infinite;
+   
+   /* Standar Syntax */
+   animation: rainbow 3s infinite; 
+ }
+ 
+ /* Chrome, Safari, Opera */
+ @-webkit-keyframes rainbow{
+   0%{color: orange;}	
+   10%{color: purple;}	
+     20%{color: red;}
+   30%{color: CadetBlue;}
+     40%{color: yellow;}
+   50%{color: coral;}
+     60%{color: green;}
+   70%{color: cyan;}
+   80%{color: DeepPink;}
+   90%{color: DodgerBlue;}
+     100%{color: orange;}
+ }
+ 
+ /* Internet Explorer */
+ @-ms-keyframes rainbow{
+   0%{color: orange;}	
+   10%{color: purple;}	
+     20%{color: red;}
+     40%{color: yellow;}
+     60%{color: green;}
+     100%{color: orange;}
+ }
+ 
+ /* Standar Syntax */
+ @keyframes rainbow{
+   0%{color: orange;}	
+   10%{color: purple;}	
+     20%{color: red;}
+     40%{color: yellow;}
+     60%{color: green;}
+     100%{color: orange;}
+ }
+
+
+
+
+
+

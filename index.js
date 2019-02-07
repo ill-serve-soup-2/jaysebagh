@@ -88,9 +88,10 @@ titlesoup.addEventListener("mouseleave", e => {
 
 
 // STRETCH FUN STUFF
+
+
+
 // cursor trail
-
-
 let trail = document.getElementById("trail");
 document.addEventListener("mousemove", getMouse); 
 
@@ -266,3 +267,17 @@ if(!window.ThreeDit) {
         } else {
     ThreeDit.recollectElems();
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
