@@ -131,6 +131,10 @@ function followMouse(){
     }
 }
 
+
+var audio = document.getElementById("vol");
+  audio.volume = 0.2;
+
 // page follows mouse
 
 
