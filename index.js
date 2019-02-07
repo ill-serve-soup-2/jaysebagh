@@ -38,6 +38,7 @@ titlesoup.addEventListener("mouseleave", e => {
 });
 
 // SELECT ONE, TWO, THREE, AND HTML.
+let top = document.querySelector("#top")
 let one = document.querySelector("#one");
 let oneValue = one.offsetTop;
 let two = document.querySelector("#two")
@@ -62,9 +63,15 @@ window.addEventListener("scroll", e => {
         html.classList.add("three")
         html.classList.remove("two", "four")
     }
-    // CHECKS IF WINDOW HITS BOTTOM OF PAGE TO SHOW FOURTH BG
-    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    // CHECKS WINDOW POSITION TO SHOW FOUR BG
+    if (window.scrollY >= threeValue) {
         html.classList.add("four")
         html.classList.remove("two", "three")
     }
+
+    // CHECKS IF WINDOW HITS BOTTOM OF PAGE TO SHOW FOURTH BG
+    // if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    //     html.classList.add("four")
+    //     html.classList.remove("two", "three")
+    // }
 })
