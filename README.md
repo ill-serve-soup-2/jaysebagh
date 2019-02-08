@@ -1,6 +1,6 @@
 I'll Serve Soup 2
 
-UI - III
+Languages used: HTML/CSS/JS
 
 Jay Sebagh
 
